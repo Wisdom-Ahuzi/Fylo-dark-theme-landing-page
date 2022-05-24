@@ -1,0 +1,1772 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&family=Raleway:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Overpass&family=Raleway:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .2s ease-in;
+    scroll-behavior: smooth;
+}
+
+p,
+small {
+    font-family: 'Raleway', sans-serif;
+}
+
+header,
+h1,
+h2 {
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background-position: top 760px left 1px;
+    background-size: contain;
+    width: 100%;
+    background-color: hsl(216, 53%, 9%);
+}
+
+.introer {
+    background-image: url(./images/bg-curvy-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: top 100% right 2px;
+    background-color: hsl(217, 28%, 15%);
+    background-size: contain;
+}
+
+.major {
+    background-color: hsl(218, 28%, 13%);
+}
+
+/****************************Navbar***********************/
+.nav-bar {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    padding: 40px 55px;
+}
+
+.navs {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navs>ul {
+    width: 25%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+.navs>ul>li>a {
+    text-decoration: none;
+    color: hsl(0, 5%, 89%);
+    font-size: large;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.navs>ul>li>a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+/*********************Main Contents*****************************/
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main>header {
+    font-size: 2.5rem;
+    color: hsl(0, 0%, 100%);
+    width: 45%;
+    height: 24vh;
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 40px;
+    font-family: 'Raleway', sans-serif;
+    line-height: 170%;
+}
+
+.main>p {
+    font-size: 22px;
+    color: hsl(0, 2%, 71%);
+    width: 35%;
+    text-align: center;
+    padding-bottom: 39px;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 500;
+}
+
+.main>.get-started {
+    width: 17%;
+    height: 7vh;
+    background-color: hsl(198, 60%, 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    border-radius: 35px;
+    color: hsl(0, 0%, 100%);
+    font-size: 21px;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.benefits-1,
+.benefits-2 {
+    width: 100%;
+    height: 42vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.benefits-1>div,
+.benefits-2>div {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+}
+
+.benefits-1>div>h2,
+.benefits-2>div>h2 {
+    color: hsl(0, 0%, 100%);
+    font-size: 22px;
+}
+
+.benefits-1>div>p,
+.benefits-2>div>p {
+    width: 65%;
+    text-align: center;
+    font-size: 18px;
+    color: hsla(0, 0%, 100%, 0.787);
+}
+
+.productive {
+    width: 100%;
+    height: 64vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6%;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+.productive-image {
+    width: 50%;
+}
+
+.stay {
+    width: 50%;
+    height: 65vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.stay>h2 {
+    position: absolute;
+    left: 0;
+    top: 13%;
+    font-size: 45px;
+    width: 72%;
+    color: hsl(0, 0%, 100%);
+}
+
+.stay>.never {
+    font-size: 19px;
+    line-height: 150%;
+    position: absolute;
+    top: 42%;
+    color: hsl(0, 0%, 100%);
+    width: 91%;
+    left: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.stay .see {
+    position: absolute;
+    top: 80%;
+    left: 0px;
+    font-size: 21px;
+    color: hsl(198, 60%, 50%);
+    width: 100%;
+    padding-bottom: 2px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.three-divs {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4%;
+    background-image: url(./images/bg-quotes.png);
+    background-repeat: no-repeat;
+    background-position: top 27% left 8.5%;
+}
+
+.three-divs>div {
+    width: 25%;
+    height: 39%;
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(219, 30%, 18%);
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 1rem 1rem 1rem hsla(218, 36%, 13%, 0.683);
+}
+
+.three-divs>div>p {
+    color: hsl(0, 3%, 79%);
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    position: absolute;
+    top: 22%;
+    right: 9%;
+    left: 9%;
+
+}
+
+.persom {
+    display: flex;
+    position: absolute;
+    bottom: 10%;
+    right: 9%;
+    left: 9%;
+    gap: 2%;
+}
+
+.persom>img {
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+}
+
+.credentials>p {
+    color: hsl(0, 4%, 85%);
+}
+
+.credentials>small {
+    color: hsla(0, 3%, 75%, 0.828);
+    font-size: 11px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+.early {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.access {
+    display: flex;
+    width: 60%;
+    height: 40vh;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    border-radius: 5px;
+    background-color: hsl(217, 28%, 15%);
+    box-shadow: 1rem 0.5rem 0.5rem hsla(218, 37%, 10%, 0.683);
+    position: absolute;
+    top: 375vh;
+    z-index: 4;
+}
+
+.access>h2 {
+    position: absolute;
+    top: 15%;
+    font-size: 43px;
+    color: hsl(0, 4%, 85%);
+}
+
+.access>p {
+    font-size: 17px;
+    position: absolute;
+    top: 38%;
+    text-align: center;
+    color: hsl(0, 2%, 71%);
+    padding-left: 13%;
+    padding-right: 13%;
+}
+
+.access>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    position: absolute;
+    top: 70%;
+    width: 100%;
+}
+
+.access>div>input {
+    width: 58%;
+    height: 6vh;
+    border-radius: 35px;
+    padding-left: 4%;
+    font-size: 15px;
+    position: absolute;
+    left: 8%;
+    outline: none;
+    color: hsl(216, 53%, 9%);
+}
+
+.access>div>.start {
+    position: absolute;
+    right: 8%;
+    background-color: hsl(198, 60%, 50%);
+    width: 23%;
+    height: 6vh;
+    border-radius: 35px;
+    font-size: 16px;
+    font-weight: 500;
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.access>div>.start>p {
+    font-family: 'Raleway', sans-serif;
+}
+
+#foot {
+    width: 100%;
+    height: 40vh;
+    position: relative;
+    background-color: hsl(216, 53%, 9%);
+}
+
+.positioner {
+    position: absolute;
+    top: 85%;
+    width: 85%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: hsl(216, 53%, 9%);
+}
+
+.fylo {
+    align-self: flex-start;
+    padding-left: 10%;
+    padding-bottom: 2%;
+
+}
+
+
+.footer-wrapper {
+    align-self: flex-start;
+    margin-left: 10%;
+    width: 100%;
+    height: 35vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.positioner .footer-wrapper>.location {
+    display: flex;
+    gap: 5%;
+    position: relative;
+}
+
+.positioner .footer-wrapper>.location>svg {
+    position: relative;
+    top: 3%;
+}
+
+.positioner .footer-wrapper>.location>p {
+    font-size: 20px;
+    font-weight: 500;
+    color: hsl(0, 2%, 71%);
+    width: 454px;
+}
+
+.phone {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    padding: 0px;
+    margin: 0px;
+    height: 10vh;
+    width: 16%;
+}
+
+.phone>p {
+    color: hsl(0, 3%, 79%);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.about {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60%;
+    font-size: 20px;
+    font-weight: 500;
+    color: hsl(0, 3%, 79%);
+}
+
+.about>p:hover {
+    color: white;
+    font-size: 21px;
+    cursor: pointer;
+}
+
+.contact-us {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 45%;
+    font-size: 20px;
+    font-weight: 500;
+    color: hsl(0, 3%, 79%);
+}
+
+.contact-us>p:hover {
+    color: white;
+    font-size: 21px;
+    cursor: pointer;
+}
+
+.social {
+    width: 10%;
+    height: 23%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8%;
+}
+
+.social>svg {
+    background-color: white;
+    border-radius: 50%;
+    padding: 2%;
+    cursor: pointer;
+}
+
+.social>svg:hover {
+    background-color: hsl(176, 68%, 64%);
+    color: hsl(176, 68%, 64%);
+}
+
+.started {
+    background-color: hsl(176, 68%, 64%) !important;
+}
+
+.seer {
+    color: white !important;
+}
+
+.errr {
+    color: hsl(0, 100%, 63%);
+    position: relative;
+    top: 80%;
+    right: 24%;
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
+}
+
+/*********************MEDIA QUERY FOR TAB VIEW*****************/
+
+@media screen and (min-width:979px) and (max-width:1300px) {
+    .navs>ul>li>a {
+        padding-left: 20%;
+        font-size: 18px;
+    }
+
+    .navs>ul>li {
+        width: 70%;
+    }
+
+    .navs>ul {
+        width: 40%;
+    }
+
+    .main>header {
+        font-size: 2.1rem;
+        width: 50%;
+        height: 20vh;
+    }
+
+    .main>p {
+        font-size: 17px;
+        width: 35%;
+    }
+
+    .stay {
+        width: 20000px;
+    }
+
+    .stay>h2 {
+        font-size: 2.1rem;
+        top: 20%;
+        width: 100%;
+        margin-left: 17%;
+    }
+
+    .stay>.never {
+        font-size: 17px;
+        top: 40%;
+        margin-left: 17%;
+    }
+
+    .stay .see {
+        top: 79%;
+        font-size: 17px;
+        margin-left: 17%;
+    }
+
+    .productive {
+        gap: 13%;
+    }
+
+    .productive-image {
+        margin-left: -8%;
+    }
+
+    .three-divs>div>p {
+        font-size: 14px;
+        top: 15%;
+    }
+
+    .access {
+        display: flex;
+        width: 65%;
+        top: 360vh;
+    }
+
+    .access>h2 {
+        font-size: 2.1rem;
+    }
+
+    .access>div>.start {
+        width: 25%;
+    }
+
+    .access>div>.start>p {
+        font-size: 15px;
+    }
+
+    #foot {
+        height: 20vh;
+    }
+
+    .positioner {
+        width: 95%;
+        height: 35vh;
+        top: 200px;
+    }
+
+    .footer-wrapper {
+        margin-left: 2%;
+        justify-content: space-evenly;
+    }
+
+    .fylo {
+        padding-left: 5%;
+    }
+
+    .positioner .footer-wrapper>.location>p {
+        font-size: 17px;
+        width: 350px;
+        line-height: 25px;
+    }
+
+    .phone {
+        width: 15%;
+    }
+
+    .phone>p {
+        font-size: 17px;
+    }
+
+    .about {
+        font-size: 17px;
+    }
+
+    .contact-us {
+        font-size: 17px;
+    }
+
+    .social {
+        width: 8%;
+        height: 8%;
+    }
+
+    .errr {
+        color: hsl(0, 100%, 63%);
+        position: relative;
+        top: 80%;
+        right: 22%;
+        font-size: 15px;
+        font-family: 'Raleway', sans-serif;
+    }
+}
+
+/*********************MEDIA QUERY FOR PHONE VIEW*****************/
+@media screen and (min-width:700px) and (max-width:978px) {
+    .navs>ul>li>a {
+        padding-left: 20%;
+        font-size: 20px;
+    }
+
+    .navs>ul>li {
+        width: 70%;
+    }
+
+    .navs>ul {
+        width: 68%;
+    }
+
+    .main>header {
+        font-size: 3.2rem;
+        width: 70%;
+        line-height: 125%;
+        padding-bottom: 32%;
+        height: 25vh;
+    }
+
+    .main>p {
+        font-size: 2.1rem;
+        width: 82%;
+        line-height: 125%;
+        padding-bottom: 80px;
+    }
+
+    .main>.get-started {
+        width: 67%;
+        height: 12vh;
+        border-radius: 50px;
+        font-size: 35px;
+        font-weight: 400;
+    }
+
+    .benefits-1,
+    .benefits-2 {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20%;
+        margin-bottom: 20%;
+    }
+
+    .benefits-1>div,
+    .benefits-2>div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: stretch;
+        align-items: center;
+        margin-bottom: 20%;
+    }
+
+    .benefits-1>div>div {
+        width: 15%;
+        height: 15vh;
+    }
+
+    .benefits-2>div>div {
+        width: 20%;
+        height: 15vh;
+    }
+
+    .benefits-1>div>div>img,
+    .benefits-2>div>div>img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .benefits-1>div>h2,
+    .benefits-2>div>h2 {
+        color: hsl(0, 0%, 100%);
+        font-size: 2.9rem;
+    }
+
+    .benefits-1>div>p,
+    .benefits-2>div>p {
+        width: 85%;
+        text-align: center;
+        font-size: 32px;
+        color: hsla(0, 0%, 100%, 0.787);
+    }
+
+    .productive {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 0%;
+        padding-left: 0%;
+        padding-right: 0%;
+        margin-top: 30rem;
+    }
+
+    .productive-image {
+        width: 75%;
+        margin-bottom: 6%;
+    }
+
+    .stay {
+        width: 92%;
+        margin-left: 7%;
+        padding-right: 10%;
+    }
+
+    .stay>h2 {
+        font-size: 44px;
+        width: 100%;
+    }
+
+    .stay>.never {
+        font-size: 33px;
+        width: 95%;
+        top: 51%;
+    }
+
+    .stay .see {
+        top: 610px;
+        font-size: 30px;
+    }
+
+    .three-divs {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 4%;
+        background-image: url(./images/bg-quotes.png);
+        background-repeat: no-repeat;
+        background-position: top 0px left 8.5%;
+        margin-top: 75%;
+        margin-bottom: 60%;
+    }
+
+    .three-divs>div {
+
+        width: 75%;
+        height: 1000px;
+        display: flex;
+        flex-direction: column;
+        padding: 170px;
+    }
+
+    .three-divs>div>p {
+        color: hsl(0, 3%, 79%);
+        font-size: 24px;
+        line-height: 35px;
+        font-weight: 200;
+        position: absolute;
+        top: 18%;
+        right: 9%;
+        left: 9%;
+
+    }
+
+    .persom {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        bottom: 10%;
+        right: 9%;
+        left: 9%;
+        gap: 4%;
+    }
+
+    .persom>img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+    }
+
+    .credentials>p {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 8px;
+    }
+
+    .credentials>small {
+        font-size: 18px;
+    }
+
+
+    .early {
+        width: 100%;
+        height: 40vh;
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+    }
+
+    .access {
+        display: flex;
+        width: 85%;
+        height: 87vh;
+        top: 744vh;
+        border-radius: 6px;
+    }
+
+    .access>p {
+        font-size: 30px;
+        line-height: 160%;
+        top: 28%;
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .access>div {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        position: absolute;
+        gap: 40px;
+        top: 63%;
+        width: 100%;
+    }
+
+    .access>div>input {
+        width: 90%;
+        height: 11vh;
+        border-radius: 50px;
+        padding-left: 6%;
+        font-size: 15px;
+        position: unset;
+        left: unset;
+        font-size: 20px;
+        outline: none;
+    }
+
+    .access>div>.start {
+        position: unset;
+        right: unset;
+        background-color: hsl(198, 60%, 50%);
+        width: 90%;
+        height: 11vh;
+        border-radius: 50px;
+        font-size: 30px;
+    }
+
+    .positioner {
+        height: 80vh;
+        gap: 45px;
+        top: 100%;
+    }
+
+    .footer-wrapper {
+        width: 100%;
+        height: 20vh;
+        gap: 120px;
+        flex-direction: column;
+    }
+
+    .positioner .footer-wrapper>.location {
+        display: flex;
+        gap: 7%;
+        position: relative;
+    }
+
+    .positioner .footer-wrapper>.location>svg {
+        position: relative;
+        top: 9%;
+    }
+
+    .positioner .footer-wrapper>.location>p {
+        font-size: 32px;
+        width: 100%;
+    }
+
+    .phone {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        height: 20vh;
+        gap: 20px;
+        width: 45%;
+        position: relative;
+    }
+
+    .phone>svg {
+        position: relative;
+        top: 39%;
+    }
+
+    .phone>p {
+        color: hsl(0, 3%, 79%);
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    .about {
+        gap: 30px;
+        height: 200px;
+        font-size: 30px;
+    }
+
+    .contact-us {
+        gap: 30px;
+        font-size: 30px;
+    }
+
+    .social {
+        width: 25%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15%;
+        padding-bottom: 10%;
+
+        margin-left: 35%;
+        gap: 8%;
+    }
+
+    .social>svg {
+        background-color: white;
+        border-radius: 50%;
+        padding: 2%;
+    }
+
+    .errr {
+        color: hsl(0, 100%, 63%);
+        position: relative;
+        top: 76%;
+        right: 15%;
+        font-size: 20px;
+        font-family: 'Raleway', sans-serif;
+    }
+}
+
+/*********************MEDIA QUERY FOR SMALLER PHONE *****************/
+@media screen and (min-width:450px) and (max-width:699px) {
+    .introer {
+        background-image: url(./images/bg-curvy-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: top 100% right 2px;
+        background-color: hsl(217, 28%, 15%);
+        background-size: contain;
+    }
+    .logo>img {
+        width: 100px;
+        height: 35px;
+    }
+
+    .nav-bar {
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 10px;
+    }
+
+    .navs {
+        width: 100%;
+        height: 10vh;
+        justify-self: flex-end;
+    }
+
+
+    .navs>ul {
+        width: 80%;
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        list-style-type: none;
+    }
+
+    .navs>ul>li>a {
+        text-decoration: none;
+        color: hsl(0, 0%, 100%);
+        font-weight: 400;
+        font-size: 0.9rem;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    .intro-image>img {
+        width: 100%;
+        height: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .main>header {
+        font-size: 1.8rem;
+        width: 100%;
+        line-height: 100%;
+        padding-bottom: 35%;
+    }
+
+    .main>p {
+        font-size: 1.3rem;
+        width: 85%;
+        line-height: 125%;
+        padding-bottom: 10%;
+    }
+
+    .main>.get-started {
+        width: 70%;
+        height: 9vh;
+        border-radius: 50px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .benefits-1,
+    .benefits-2 {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20%;
+        margin-bottom: 10%;
+    }
+
+    .benefits-1>div,
+    .benefits-2>div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20%;
+    }
+
+    .benefits-1>div>div {
+        width: 18%;
+        height: 12vh;
+    }
+
+    .benefits-2>div>div {
+        width: 22%;
+        height: 12vh;
+    }
+
+
+    .benefits-1>div>div>img,
+    .benefits-2>div>div>img {
+        width: 100%;
+        height: 70%;
+    }
+
+    .benefits-1>div>h2,
+    .benefits-2>div>h2 {
+        color: hsl(0, 0%, 100%);
+        font-size: 1.8rem;
+        text-align: center;
+        align-self: center;
+    }
+
+    .benefits-1>div>p,
+    .benefits-2>div>p {
+        width: 95%;
+        text-align: center;
+        font-size: 1.4rem;
+        color: hsla(0, 0%, 100%, 0.787);
+    }
+
+    .productive {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 0%;
+        padding-left: 0%;
+        padding-right: 0%;
+        margin-top: 10rem;
+    }
+
+    .productive-image {
+        width: 80%;
+        margin-bottom: 6%;
+    }
+
+    .productive-image>img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .stay {
+        width: 100%;
+        left: 0%;
+        padding-right: 0%;
+    }
+
+    .stay>h2 {
+        font-size: 1.8rem;
+        text-align: center;
+        width: 96%;
+    }
+
+    .stay>.never {
+        font-size: 1.1rem;
+        width: 95%;
+        top: 40%;
+        left: 3%;
+    }
+
+    .stay .see {
+        top: 90%;
+        font-size: 1rem;
+        padding-left: 19px;
+    }
+
+
+    .three-divs {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 4%;
+        background-image: url(./images/bg-quotes.png);
+        background-repeat: no-repeat;
+        background-position: top 0px left 8.5%;
+        margin-top: 20%;
+        margin-bottom: 4rem;
+    }
+
+    .three-divs>div {
+
+        width: 90%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+    }
+
+
+    .three-divs>div>p {
+        color: hsl(0, 3%, 79%);
+        font-size: 1.1rem;
+        line-height: 25px;
+        font-weight: 200;
+        position: absolute;
+        top: 12%;
+        right: 4%;
+        left: 4%;
+        width: 95%;
+    }
+
+
+    .persom {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        bottom: 7%;
+        right: 9%;
+        left: 5%;
+        gap: 4%;
+    }
+
+    .persom>img {
+        width: 37px;
+        height: 37px;
+        border-radius: 50%;
+    }
+
+    .credentials>p {
+        font-size: 1rem;
+        font-weight: 700;
+        margin-bottom: 3px;
+    }
+
+    .credentials>small {
+        font-size: 0.7rem;
+    }
+
+
+    .early {
+        width: 100%;
+        height: 62vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .access {
+        display: flex;
+        width: 90%;
+        height: 70vh;
+        top: 585vh;
+        border-radius: 6px;
+    }
+
+    .access>h2 {
+        font-size: 1.6rem;
+    }
+
+    .access>p {
+        font-size: 1rem;
+        line-height: 25px;
+        top: 26%;
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .access>div {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        position: absolute;
+        gap: 35px;
+        top: 58%;
+        width: 100%;
+    }
+
+    .access>div>input {
+        width: 90%;
+        height: 8vh;
+        border-radius: 50px;
+        padding-left: 6%;
+        font-size: 15px;
+        position: unset;
+        left: unset;
+        font-size: 1rem;
+        outline: none;
+    }
+
+    .access>div>.start {
+        position: unset;
+        right: unset;
+        background-color: hsl(198, 60%, 50%);
+        width: 90%;
+        height: 8vh;
+        border-radius: 50px;
+        font-size: 1rem;
+    }
+
+    .positioner {
+        height: 80vh;
+        gap: 45px;
+    }
+
+    .footer-wrapper {
+        width: 100%;
+        height: 20vh;
+        gap: 90px;
+        flex-direction: column;
+    }
+
+    .positioner .footer-wrapper>.location {
+        display: flex;
+        gap: 7%;
+        position: relative;
+    }
+
+    .positioner .footer-wrapper>.location>svg {
+        position: relative;
+        top: 9%;
+    }
+
+    .positioner .footer-wrapper>.location>p {
+        font-size: 1.5rem;
+        width: 100%;
+    }
+
+    .phone {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        height: 20vh;
+        gap: 20px;
+        width: 45%;
+        position: relative;
+    }
+
+    .phone>svg {
+        position: relative;
+        top: 39%;
+    }
+
+    .phone>p {
+        color: hsl(0, 3%, 79%);
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    .about {
+        gap: 30px;
+        height: 200px;
+        font-size: 1.5rem;
+    }
+
+    .contact-us {
+        gap: 30px;
+        font-size: 1.5rem;
+    }
+
+    .social {
+        width: 25%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15%;
+        padding-bottom: 10%;
+        margin-left: 35%;
+        gap: 8%;
+    }
+
+    .social>svg {
+        background-color: white;
+        border-radius: 50%;
+        padding: 2%;
+    }
+
+    .errr {
+        color: hsl(0, 100%, 63%);
+        position: relative;
+        top: 70%;
+        right: 15%;
+        font-size: 15px;
+        font-family: 'Raleway', sans-serif;
+    }
+
+}
+
+@media screen and (min-width:300px) and (max-width:449px) {
+
+    .introer {
+        background-image: url(./images/bg-curvy-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: top 100% right 2px;
+        background-color: hsl(217, 28%, 15%);
+        background-size: contain;
+    }
+
+    .logo>img {
+        width: 100px;
+        height: 35px;
+    }
+
+    .nav-bar {
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 10px;
+    }
+
+    .navs {
+        width: 100%;
+        height: 10vh;
+        justify-self: flex-end;
+    }
+
+
+    .navs>ul {
+        width: 80%;
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        list-style-type: none;
+    }
+
+    .navs>ul>li>a {
+        text-decoration: none;
+        color: hsl(0, 0%, 100%);
+        font-weight: 400;
+        font-size: 0.9rem;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    .intro-image>img {
+        width: 100%;
+        height: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .main>header {
+        font-size: 1.8rem;
+        width: 100%;
+        line-height: 100%;
+        padding-bottom: 35%;
+    }
+
+    .main>p {
+        font-size: 1.3rem;
+        width: 85%;
+        line-height: 125%;
+        padding-bottom: 10%;
+    }
+
+    .main>.get-started {
+        width: 70%;
+        height: 9vh;
+        border-radius: 50px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .benefits-1,
+    .benefits-2 {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20%;
+        margin-bottom: 10%;
+    }
+
+    .benefits-1>div,
+    .benefits-2>div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20%;
+    }
+
+    .benefits-1>div>div {
+        width: 18%;
+        height: 12vh;
+    }
+
+    .benefits-2>div>div {
+        width: 22%;
+        height: 12vh;
+    }
+
+
+    .benefits-1>div>div>img,
+    .benefits-2>div>div>img {
+        width: 100%;
+        height: 70%;
+    }
+
+    .benefits-1>div>h2,
+    .benefits-2>div>h2 {
+        color: hsl(0, 0%, 100%);
+        font-size: 1.8rem;
+        text-align: center;
+        align-self: center;
+    }
+
+    .benefits-1>div>p,
+    .benefits-2>div>p {
+        width: 95%;
+        text-align: center;
+        font-size: 1.4rem;
+        color: hsla(0, 0%, 100%, 0.787);
+    }
+
+    .productive {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 0%;
+        padding-left: 0%;
+        padding-right: 0%;
+        margin-top: 10rem;
+    }
+
+    .productive-image {
+        width: 80%;
+        margin-bottom: 6%;
+    }
+
+    .productive-image>img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .stay {
+        width: 100%;
+        left: 0%;
+        padding-right: 0%;
+    }
+
+    .stay>h2 {
+        font-size: 1.8rem;
+        text-align: center;
+        width: 96%;
+    }
+
+    .stay>.never {
+        font-size: 1.1rem;
+        width: 95%;
+        top: 40%;
+        left: 3%;
+    }
+
+    .stay .see {
+        top: 90%;
+        font-size: 1rem;
+        padding-left: 10px;
+    }
+
+
+    .three-divs {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 4%;
+        background-image: url(./images/bg-quotes.png);
+        background-repeat: no-repeat;
+        background-position: top 0px left 8.5%;
+        margin-top: 20%;
+        margin-bottom: 2.9rem;
+    }
+
+    .three-divs>div {
+
+        width: 90%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0px;
+    }
+
+
+    .three-divs>div>p {
+        color: hsl(0, 3%, 79%);
+        font-size: 1.1rem;
+        line-height: 25px;
+        font-weight: 200;
+        position: absolute;
+        top: 12%;
+        right: 4%;
+        left: 4%;
+        width: 95%;
+    }
+
+
+    .persom {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        bottom: 7%;
+        right: 9%;
+        left: 5%;
+        gap: 4%;
+    }
+
+    .persom>img {
+        width: 37px;
+        height: 37px;
+        border-radius: 50%;
+    }
+
+    .credentials>p {
+        font-size: 1rem;
+        font-weight: 700;
+        margin-bottom: 3px;
+    }
+
+    .credentials>small {
+        font-size: 0.7rem;
+    }
+
+
+    .early {
+        width: 100%;
+        height: 65vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .access {
+        display: flex;
+        width: 90%;
+        height: 70vh;
+        top: 593vh;
+        border-radius: 6px;
+    }
+
+    .access>h2 {
+        font-size: 1.6rem;
+    }
+
+    .access>p {
+        font-size: 1rem;
+        line-height: 25px;
+        top: 26%;
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .access>div {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        position: absolute;
+        gap: 35px;
+        top: 58%;
+        width: 100%;
+    }
+
+    .access>div>input {
+        width: 90%;
+        height: 8vh;
+        border-radius: 50px;
+        padding-left: 6%;
+        font-size: 15px;
+        position: unset;
+        left: unset;
+        font-size: 1rem;
+        outline: none;
+    }
+
+    .access>div>.start {
+        position: unset;
+        right: unset;
+        background-color: hsl(198, 60%, 50%);
+        width: 90%;
+        height: 8vh;
+        border-radius: 50px;
+        font-size: 1rem;
+    }
+
+    .positioner {
+        height: 80vh;
+        gap: 45px;
+    }
+
+    .footer-wrapper {
+        width: 100%;
+        height: 20vh;
+        gap: 90px;
+        flex-direction: column;
+    }
+
+    .positioner .footer-wrapper>.location {
+        display: flex;
+        gap: 7%;
+        position: relative;
+    }
+
+    .positioner .footer-wrapper>.location>svg {
+        position: relative;
+        top: 9%;
+    }
+
+    .positioner .footer-wrapper>.location>p {
+        font-size: 1.5rem;
+        width: 100%;
+    }
+
+    .phone {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        height: 20vh;
+        gap: 20px;
+        width: 45%;
+        position: relative;
+    }
+
+    .phone>svg {
+        position: relative;
+        top: 39%;
+    }
+
+    .phone>p {
+        color: hsl(0, 3%, 79%);
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    .about {
+        gap: 30px;
+        height: 200px;
+        font-size: 1.5rem;
+    }
+
+    .contact-us {
+        gap: 30px;
+        font-size: 1.5rem;
+    }
+
+    .social {
+        width: 25%;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15%;
+        padding-bottom: 10%;
+        margin-left: 35%;
+        gap: 8%;
+    }
+
+    .social>svg {
+        background-color: white;
+        border-radius: 50%;
+        padding: 2%;
+    }
+
+    .errr {
+        color: hsl(0, 100%, 63%);
+        position: relative;
+        top: 70%;
+        right: 6%;
+        font-size: 15px;
+        font-family: 'Raleway', sans-serif;
+    }
+}
